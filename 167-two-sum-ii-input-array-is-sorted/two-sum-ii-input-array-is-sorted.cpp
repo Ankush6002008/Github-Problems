@@ -8,15 +8,15 @@ public:
         while(left<right){
             int sum = numbers[left] + numbers[right];
             if(sum<target){
-                left++;;
+                left++;
             }
             else if(sum>target){
-                right--;;
+                right--;
             }
             else if(sum == target){
                 return {left+1, right+1};
             }
         }
-        return {left+1, right+1};
+        return {};
     }
 };
